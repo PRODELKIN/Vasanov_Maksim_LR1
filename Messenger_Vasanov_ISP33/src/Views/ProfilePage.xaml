@@ -1,0 +1,33 @@
+﻿<Page x:Class="Messenger_Vasanov_ISP33.ProfilePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Messenger_Vasanov_ISP33"
+      mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="600"
+      Title="ProfilePage">
+
+    <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+
+        <Grid Background="Black">
+            <StackPanel MaxWidth="400" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="30">
+                <TextBlock Text="Личный профиль" Style="{StaticResource Title}" Margin="0 0 0 20"/>
+
+                <TextBlock Text="Номер телефона (Логин):" Style="{StaticResource TextInput}" Margin="0 5"/>
+                <TextBox x:Name="PhoneTxt" Style="{StaticResource Input}" IsReadOnly="True" Background="#1a1a1a" BorderBrush="#333333" Margin="0 0 0 15"/>
+
+                <TextBlock Text="Фамилия:" Style="{StaticResource TextInput}" Margin="0 5"/>
+                <TextBox x:Name="LastNameTxt" Style="{StaticResource Input}" Margin="0 0 0 15"/>
+
+                <TextBlock Text="Имя:" Style="{StaticResource TextInput}" Margin="0 5"/>
+                <TextBox x:Name="FirstNameTxt" Style="{StaticResource Input}" Margin="0 0 0 15"/>
+
+                <TextBlock Text="Отчество:" Style="{StaticResource TextInput}" Margin="0 5"/>
+                <TextBox x:Name="MiddleNameTxt" Style="{StaticResource Input}" Margin="0 0 0 15"/>
+
+                <Button x:Name="SaveProfileBtn" Content="Сохранить изменения" Style="{StaticResource Button}" Height="40" Click="SaveProfileBtn_Click" Margin="0 0 0 20"/>
+            </StackPanel>
+        </Grid>
+    </ScrollViewer>
+</Page>

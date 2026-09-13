@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="282cead4cb22494fb0e9913cf99e5906" Name="Diagram1">
+        <EntityTypeShape EntityType="Messenger_Vasanov_ISP33Model.sysdiagrams" Width="1.5" PointX="0.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Messenger_Vasanov_ISP33Model.Chats" Width="1.5" PointX="3" PointY="1" />
+        <EntityTypeShape EntityType="Messenger_Vasanov_ISP33Model.Messages" Width="1.5" PointX="5.25" PointY="1" />
+        <EntityTypeShape EntityType="Messenger_Vasanov_ISP33Model.Users" Width="1.5" PointX="0.75" PointY="1" />
+        <AssociationConnector Association="Messenger_Vasanov_ISP33Model.Fk_chat_user1" />
+        <AssociationConnector Association="Messenger_Vasanov_ISP33Model.Fk_chat_user2" />
+        <AssociationConnector Association="Messenger_Vasanov_ISP33Model.Fk_message_chat" />
+        <AssociationConnector Association="Messenger_Vasanov_ISP33Model.Fk_message_sender" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
